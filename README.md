@@ -1,98 +1,96 @@
-## V2Ray 基于 Nginx 的 vmess+ws+tls 一键安装脚本
+## v2ray based on Nginx VMESS + WS + TLS one-click installation script
 
-> 感谢 JetBrains 提供的非商业开源软件开发授权
+> Thanks to JetBrains provided by non-commercial open source software development authorization
 
-> Thanks for non-commercial open source development authorization by JetBrains
-### Telegram 群组
-* telegram 交流群:https://t.me/wulabing_v2ray 
-* telegram 更新公告频道：https://t.me/wulabing_channel
+> Thanks for Non-Commercial Open Source Development Authorization by JetBrains
+### Telegram group
+* Telegram exchange group: https: t.me/wulabing_v2ray
+* Telegram update announcement channel: https: t.me/wulabing_channel
 
-### 准备工作
-* 准备一个域名，并将A记录添加好。
-* [V2ray官方说明](https://www.v2ray.com/)，了解 TLS WebSocket 及 V2ray 相关信息
-* 安装好 wget
+### Ready to work
+* Prepare a domain name and add a record to a record.
+* [V2ray official description] (https://www.v2ray.com/), learn about TLS WebSocket and V2Ray
+* Install wget
 
-### 安装/更新方式（h2 和 ws 版本已合并）
-Vmess+websocket+TLS+Nginx+Website
-```
-wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh
-```
+### Installation / Update mode (H2 and WS version have been merged)
+VMESS + WebSocket + TLS + Nginx + Website
+`` `
+Wget -n --no-check-certificate -q-install.sh "https://RAW.GITHUBUSERCONTENT.COM/wulabing/v2ray_ws-tls_bash_onekey/master/install.sh" && chmod + x install.sh && bash install .sh
+`` `
 
-### 注意事项
-* 如果你不了解脚本中各项设置的具体含义，除域名外，请使用脚本提供的默认值
-* 使用本脚本需要你拥有 Linux 基础及使用经验，了解计算机网络部分知识，计算机基础操作
-* 目前支持Debian 9+ / Ubuntu 18.04+ / Centos7+ ，部分Centos模板可能存在难以处理的编译问题，建议遇到编译问题时，请更换至其他系统模板
-* 群主仅提供极其有限的支持，如有问题可以询问群友
-* 每周日的凌晨3点，Nginx 会自动重启以配合证书的签发定时任务进行，在此期间，节点无法正常连接，预计持续时间为若干秒至两分钟
+### Precautions
+* If you don't understand the specific meaning of the settings in the script, in addition to the domain name, use the default value provided by the script.
+* Using this script requires you to have Linux foundations and experience, understand the knowledge of computer network, computer basic operation
+* Currently supporting Debian 9+ / Ubuntu 18.04+ / CentOS7 +, some CentOS templates may have difficulty in processing compilation. It is recommended to change to other system templates when compiling.
+* The group owner only provides extremely limited support, if you have any questions, you can ask the group of friends.
+* At 3 o'clock in the morning of Sunday, Nginx will automatically restart to cooperate with the certificate of the certificate. During this period, the node cannot be connected normally, and the expected duration is several seconds to two minutes.
 
-### 更新日志
-> 更新内容请查看 CHANGELOG.md
+### Update log
+> Update Content, please see Changelog.md
 
 ### 鸣谢
-* ~~本脚本的另一个分支版本（Use Host）地址： https://github.com/dylanbai8/V2Ray_ws-tls_Website_onekey 请根据需求进行选择~~ 该作者可能已停止维护
-* 本脚本中 MTProxy-go TLS 版本项目引用 https://github.com/whunt1/onekeymakemtg 在此感谢 whunt1
-* 本脚本中 锐速4合1脚本原项目引用 https://www.94ish.me/1635.html 在此感谢
-* 本脚本中 锐速4合1脚本修改版项目引用 https://github.com/ylx2016/Linux-NetSpeed 在此感谢 ylx2016
+* ~~ This script is another branch address: https://github.com/dylanbai8/v2ray_ws-tls_website_onekey Please choose according to the requirements ~~ The author may have stopped maintaining
+* This script in the MtProxy-Go TLS version item reference https://github.com/whunt1/onekeymakemtg Thank Whunt1
+* This script is sharp 4 in 1 script original item reference https://www.94ish.me/1635.html thank you
+* This script is sharp 4 in 1 script modified project reference https://github.com/ylx2016/linux-netspeed Thank y 202016
 
-### 证书
-> 如果你已经拥有了你所使用域名的证书文件，可以将 crt 和 key 文件命名为 v2ray.crt v2ray.key 放在 /data 目录下（若目录不存在请先建目录），请注意证书文件权限及证书有效期，自定义证书有效期过期后请自行续签
+### Certificate
+> If you already have a certificate file you use, you can name the CRT and Key files v2ray.crt v2ray.key in / data directory (if you don't exist, please create a directory), please note the certificate file permission And the validity period of the certificate, please renew it after the custom certificate is expired.
 
-脚本支持自动生成 let's encrypted 证书，有效期3个月，理论上自动生成的证书支持自动续签
+Script support automatically generates a Let's encrypted certificate, valid for 3 months, theoretically generated certificate support automatic renewal
 
-### 查看客户端配置
-`cat ~/v2ray_info.txt`
+### View client configuration
+`Cat ~ / v2ray_info.txt`
 
-### V2ray 简介
+Introduction to ### v2ray
 
-* V2Ray是一个优秀的开源网络代理工具，可以帮助你畅爽体验互联网，目前已经全平台支持Windows、Mac、Android、IOS、Linux等操作系统的使用。
-* 本脚本为一键完全配置脚本，在所有流程正常运行完毕后，直接按照输出结果设置客户端即可使用
-* 请注意：我们依然强烈建议你全方面的了解整个程序的工作流程及原理
+* V2ray is an excellent open source network agent tool that can help you experience the Internet, and it has been fully supported by Windows, Mac, Android, iOS, Linux and other operating systems.
+* This script is a fully configured script. After all the processes are running normally, they can set the client directly according to the output results.
+* Please note: We still strongly recommend that you understand the workflow and principle of the entire program all.
 
-### 建议单服务器仅搭建单个代理
-* 本脚本默认安装最新版本的V2ray core
-* V2ray core 目前最新版本为 4.22.1（同时请注意客户端 core 的同步更新，需要保证客户端内核版本 >= 服务端内核版本）
-* 建议使用默认的443端口作为连接端口
-* 伪装内容可自行替换。
+### 建议 Single server only sets a single agent
+* This script is default the latest version of the latest version of V2Ray Core
+* V2ray core is currently the latest version of 4.22.1 (at the same time note the synchronous update of client Core, you need to ensure the core version of the client "= server core version)
+* It is recommended to use the default 443 port as the connection port.
+* The camouflage content can be replaced by themselves.
 
-### 注意事项
-* 推荐在纯净环境下使用本脚本，如果你是新手，请不要使用Centos系统。
-* 在尝试本脚本确实可用之前，请不要将本程序应用于生产环境中。
-* 该程序依赖 Nginx 实现相关功能，请使用 [LNMP](https://lnmp.org) 或其他类似携带 Nginx 脚本安装过 Nginx 的用户特别留意，使用本脚本可能会导致无法预知的错误（未测试，若存在，后续版本可能会处理本问题）。
-* V2Ray 的部分功能依赖于系统时间，请确保您使用V2RAY程序的系统 UTC 时间误差在三分钟之内，时区无关。
-* 本 bash 依赖于 [V2ray 官方安装脚本](https://install.direct/go.sh) 及 [acme.sh](https://github.com/Neilpang/acme.sh) 工作。
-* Centos 系统用户请预先在防火墙中放行程序相关端口（默认：80，443）
-
-
-### 启动方式
-
-启动 V2ray：`systemctl start v2ray`
-
-停止 V2ray：`systemctl stop v2ray`
-
-启动 Nginx：`systemctl start nginx`
-
-停止 Nginx：`systemctl stop nginx`
-
-### 相关目录
-
-Web 目录：`/home/wwwroot/3DCEList`
-
-V2ray 服务端配置：`/etc/v2ray/config.json`
-
-V2ray 客户端配置: `~/v2ray_info.inf`
-
-Nginx 目录： `/etc/nginx`
-
-证书文件: `/data/v2ray.key 和 /data/v2ray.crt` 请注意证书权限设置
-
-### 捐赠
-
-目前支持通过 MugglePay 接受虚拟货币捐赠
-
-𝒘𝒖𝒍𝒂𝒃𝒊𝒏𝒈 邀请您使用麻瓜宝，基于Telegram的电子钱包，匿名支付0手续费秒级到账。https://telegram.me/MugglePayBot?start=T3Y78AZ3
-
-您可以通过Telegram向我匿名捐赠：发送 /pay @wulabing xxx  到 @MugglePayBot 即可 默认货币为 USDT 
-
-如需要通过支付宝/微信捐赠，请Telegram私聊 @wulabing 感谢您的支持
+### Precautions
+* Recommended this script in a pure environment, if you are a newbie, please do not use the CentOS system.
+* Do not apply this program to the production environment before trying this script.
+* This program relies on Nginx implementation related features, please use [LNMP] (https://lnmp.org) or other similar to carry NGINX scripts to install NGINX, using this script, can cause unpredictable errors (not tested If there is, subsequent versions may handle this issue).
+* V2ray partial features depend on the system time, make sure that the system UTC time error of the V2RAY program is not related to the time zone.
+* This BASH is based on [V2RAY official installation script] (https://install.direct/go.sh) and [attme.sh] (https://github.com/neilpang/acme.sh) work.
+* CentOS system users please release the program related port in the firewall (default: 80, 443)
 
 
+### Starting method
+
+Start V2ray: `Systemctl Start V2ray`
+
+Stop V2ray: `Systemctl Stop V2ray`
+
+Start nginx: `systemctl start nginx`
+
+Stop nginx: `systemctl stop nginx`
+
+### Related Directory
+
+Web directory: `/ home / wwwroot / 3dcelist`
+
+V2RAY server configuration: `/ etc / v2ray / config.json`
+
+V2RAY client configuration: `~ / v2ray_info.inf`
+
+Nginx directory: `/ etc / nginx`
+
+Certificate file: `/data/v2ray.key and / data / v2ray.crt` please pay attention to the certificate permission setting
+
+### Donation
+
+Currently Supported Mugglepay ACCEPT VIRTUAL MONETARY DONATION
+
+𝒘𝒖𝒍𝒂𝒃𝒊𝒏𝒈 Invite you to use Muggaro, based on Telegram-based e-wallet, anonymous payment of 0 handling seconds to account. Https://telegram.me/mugglepaybot?start=t3y78az3
+
+You can make an anonymous donation through Telegram: send / pay@wulabing xxx to @Mugglepaybot, you can default money to USDT
+
+If you need to donate through Alipay / WeChat, please telegram private chat@wulabing Thank you for your support.
