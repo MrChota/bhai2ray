@@ -4,8 +4,8 @@
 
 > Thanks for Non-Commercial Open Source Development Authorization by JetBrains
 ### Telegram group
-* Telegram exchange group: https: t.me/wulabing_v2ray
-* Telegram update announcement channel: https: t.me/wulabing_channel
+* Telegram exchange group: https: t.me/bhaifoundation
+* Telegram update announcement channel: https: t.me/bhaifoundation
 
 ### Ready to work
 * Prepare a domain name and add a record to a record.
@@ -15,7 +15,7 @@
 ### Installation / Update mode (H2 and WS version have been merged)
 VMESS + WebSocket + TLS + Nginx + Website
 `` `
-Wget -n --no-check-certificate -q-install.sh "https://RAW.GITHUBUSERCONTENT.COM/wulabing/v2ray_ws-tls_bash_onekey/master/install.sh" && chmod + x install.sh && bash install .sh
+Wget -n --no-check-certificate -q-install.sh "https://RAW.GITHUBUSERCONTENT.COM/MrChota/bhai2ray/master/install.sh" && chmod + x install.sh && bash install .sh
 `` `
 
 ### Precautions
@@ -28,7 +28,7 @@ Wget -n --no-check-certificate -q-install.sh "https://RAW.GITHUBUSERCONTENT.COM/
 ### Update log
 > Update Content, please see Changelog.md
 
-### 鸣谢
+### Thank you
 * ~~ This script is another branch address: https://github.com/dylanbai8/v2ray_ws-tls_website_onekey Please choose according to the requirements ~~ The author may have stopped maintaining
 * This script in the MtProxy-Go TLS version item reference https://github.com/whunt1/onekeymakemtg Thank Whunt1
 * This script is sharp 4 in 1 script original item reference https://www.94ish.me/1635.html thank you
@@ -85,12 +85,3 @@ Nginx directory: `/ etc / nginx`
 
 Certificate file: `/data/v2ray.key and / data / v2ray.crt` please pay attention to the certificate permission setting
 
-### Donation
-
-Currently Supported Mugglepay ACCEPT VIRTUAL MONETARY DONATION
-
-𝒘𝒖𝒍𝒂𝒃𝒊𝒏𝒈 Invite you to use Muggaro, based on Telegram-based e-wallet, anonymous payment of 0 handling seconds to account. Https://telegram.me/mugglepaybot?start=t3y78az3
-
-You can make an anonymous donation through Telegram: send / pay@wulabing xxx to @Mugglepaybot, you can default money to USDT
-
-If you need to donate through Alipay / WeChat, please telegram private chat@wulabing Thank you for your support.
