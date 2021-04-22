@@ -14,9 +14,10 @@
 
 ### Installation / Update mode (H2 and WS version have been merged)
 VMESS + WebSocket + TLS + Nginx + Website
-`` `
-Wget -n --no-check-certificate -q-install.sh "https://RAW.GITHUBUSERCONTENT.COM/MrChota/bhai2ray/master/install.sh" && chmod + x install.sh && bash install .sh
-`` `
+
+```
+wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/MrChota/bhaiv2ray/master/install.sh" && chmod +x install.sh && bash install.sh
+```
 
 ### Precautions
 * If you don't understand the specific meaning of the settings in the script, in addition to the domain name, use the default value provided by the script.
